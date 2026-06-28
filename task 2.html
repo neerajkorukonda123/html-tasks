@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing table</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #ffffff;
+      padding: 40px;
+    }        
+     .wrapper {
+      max-width: 1000px;
+      background-color:gainsboro;
+      width: 800px;
+      margin: 40px auto;
+      height: 700px;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.10);
+    }      
+    table {
+      border-collapse: collapse;
+      margin: 50px auto;
+      background: #fff;
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    th, td {
+      padding: 27px;
+      text-align: center;
+      border: 1px solid #ddd;
+      font-size: 14px;
+    } 
+    th {
+      background: #f5f5f5;
+      text-transform: uppercase;
+      font-size: 16px;
+      color: #666;
+    }
+    .starter {
+      background: #4cb1e4;
+      color: #fff;
+    }
+
+    .econo {
+      background: #3498db;
+      color: #fff;
+    }
+
+    .standard {
+      background: #2e6cd1;
+      color: #fff;
+    }
+
+    .professional {
+      background: #164d9c;
+      color: #fff;
+    }
+    .price {
+      font-size: 28px;
+      font-weight: bold;
+    }
+
+    .per {
+      font-size: 12px;
+      color: #eee;
+      text-transform: lowercase;
+    }   
+    .hot2{
+      position: relative;
+      top: -90px;
+      right: -80px;
+      width: 120px;
+      background: #ffcc00;
+      color: #f70606;
+      font-weight: bold;
+      text-align: center;
+      line-height: 25px;
+      transform: rotate(45deg);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+      font-size: 12px;
+    }     
+    .feature {
+      background: #f9f9f9;
+      text-align: left;
+      font-weight: bold;
+      color: #555;
+    }
+    .signup-btn {
+      background: linear-gradient(#fff, #ddd);
+      border: 1px solid #aaa;
+      border-radius: 4px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #333;
+      cursor: pointer;
+    }               
+    </style>
+</head>
+<body>
+  <div class="wrapper">
+  <table>
+    <tr>
+      <th>choose your plan</th>
+      <th class="starter">starter<br><span class="price">$10</span><br><span class="per">per month</span></th>
+      <th class="econo">econo<br><span class="price">$30</span><br><span class="per">per month</span></th>
+      <th class="standard">standard<br><span class="price">$59</span><br><span class="per">per month</span></th>
+      <th class="professional">professional<br><span class="price">$99</span><br><span class="per">per month</span><div class="hot2">HOT</div></th>
+    </tr>
+    <tr>
+      <td class="feature">Amount of space</td>
+      <td>10GB</td>
+      <td>30GB</td>
+      <td>100GB</td>
+      <td>Unlimited</td>
+    </tr>
+    <tr>
+      <td class="feature">Bandwidth per month</td>
+      <td>100GB</td>
+      <td>200GB</td>
+      <td>500GB</td>
+      <td>1000GB</td>
+    </tr>
+    <tr>
+      <td class="feature">No. of e-mail accounts</td>
+      <td>1</td>
+      <td>10</td>
+      <td>50</td>
+      <td>Unlimited</td>
+    </tr>
+    <tr>
+      <td class="feature">No. of MySQL databases</td>
+      <td>1</td>
+      <td>10</td>
+      <td>50</td>
+      <td>Unlimited</td>
+    </tr>
+    <tr>
+      <td class="feature">24h support</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td class="feature">Support tickets per mo.</td>
+      <td>1</td>
+      <td>3</td>
+      <td>5</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td><button class="signup-btn">sign up!</button></td>
+      <td><button class="signup-btn" style="padding: 1px 0px;">sign up!</button></td>
+      <td><button class="signup-btn">sign up!</button></td>
+      <td><button class="signup-btn">sign up!</button></td>
+    </tr>
+  </table>
+
+    </div>
+</body>
+</html>

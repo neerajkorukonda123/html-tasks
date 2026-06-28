@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  </head> 
+  <style>
+body {
+      font-family: Arial, sans-serif;
+      background: #f0f8ff;
+      padding: 20px;
+    }
+
+    h1 {
+      color: #004080;
+      text-align: center;
+      margin-bottom: 30px;
+      text-shadow: 1px 1px 2px #ccc;
+    }
+
+    form {
+      background: #fff;
+      padding: 25px 30px;
+      max-width: 500px;
+      margin: 0 auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      border: 3px solid #008080;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-weight: bold;
+      color: #004d4d;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+      width: 100%;
+      padding: 8px 10px;
+      margin-bottom: 18px;
+      border: 2px solid #008080;
+      border-radius: 6px;
+      font-size: 16px;
+      transition: border-color 0.3s ease;
+    }
+
+    input[type="text"]:focus,
+    input[type="email"]:focus {
+      border-color: #00b3b3;
+      outline: none;
+      background-color: #e0f7f7;
+    }
+
+    input:required {
+      border: 2px solid red;
+    }
+
+    p {
+      font-weight: bold;
+      color: #004d4d;
+      margin-bottom: 8px;
+      margin-top: 20px;
+    }
+
+    label > input[type="checkbox"],
+    label > input[type="radio"] {
+      margin-right: 8px;
+      transform: scale(1.2);
+      cursor: pointer;
+    }
+
+    .mode-of-study label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: normal;
+      color: #003333;
+      cursor: pointer;
+    }
+
+    input[type="submit"] {
+      background: linear-gradient(45deg, #008080, #00b3b3);
+      border: none;
+      padding: 12px 25px;
+      color: white;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      margin-top: 15px;
+      width: 100%;
+    }
+
+    input[type="submit"]:hover {
+      background: linear-gradient(45deg, #00b3b3, #008080);
+    }
+     
+  </style>
+    
+    <title>Course Enrollment Form</title>
+
+<form action="#" method="post">
+    <h1>Course Enrollment</h1>
+ <label for="Student Name">Studentname:</label><br>
+    <input type="text" id="Studentname" name="Studentname" required><br>
+      <label for="Roll No">Roll No:</label><br>
+    <input type="text" id="Rollno" name="Rollno" required><br>
+    <label for="Email">Email:</label>
+    <input type="Email" id="Email" name="Email" required><br>
+        
+   <p>Select Courses:</p>
+        <label>
+            <input type="checkbox" name="courses" value="CS"> CS
+        </label>
+        <label>
+            <input type="checkbox" name="courses" value="DS"> DS
+        </label>
+        <label>
+            <input type="checkbox" name="courses" value="IT"> IT
+        </label>
+        <label>
+            <input type="checkbox" name="courses" value="AIML"> AIML
+        </label>
+        <label>
+            <input type="checkbox" name="courses" value="ML"> ML
+        </label>
+        <p>Mode of Study:</p>
+        <label>
+            <input type="radio" name="mode_of_study" value="Online" required> Online
+        </label>
+        <label>
+            <input type="radio" name="mode_of_study" value="Offline"> Offline
+        </label>
+        <label>
+            <input type="radio" name="mode_of_study" value="Hybrid"> Hybrid
+        </label>
+
+        <input type="submit" value="Submit">
+    </form>    
+</body>
+</html>

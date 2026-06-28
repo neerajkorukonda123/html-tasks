@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Portfolio</title>
+  <style>
+    /* ===== Basic Reset ===== */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      background: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2rem;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    /* About Me */
+    .about {
+      text-align: center;
+    }
+    .about img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+
+    /* Skills */
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap:10px;
+    }
+
+    .skill {
+      background: #333;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 14px;
+    }
+
+    /* Hobbies */
+    .hobbies-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+    }
+    .hobby {
+      background: #333;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 20px;
+      box-shadow: 10px red;
+      transition: tranform 0.3s ease;
+    }
+
+    /* Projects */
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .project-card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-10px);
+    }
+
+    /* Contacts */
+    .contact-links {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .contact-links a {
+      margin: 0 10px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .contact-links a:hover {
+      color: red; /* LinkedIn blue */
+    }
+
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin-top: 30px;
+    }
+
+    /* Smooth Scroll */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header>
+    <h1>Neeraj Korukonda</h1>
+    <p>Web Developer | Programmer | Learner</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- ===== ABOUT ME ===== -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about">
+      <img src="my picture.jpg" alt="My Photo">
+      <p>Hello! I'm Neeraj Korukonda, a passionate web developer and programmer who loves solving problems and learning new technologies. I enjoy building creative and practical projects that make life easier.</p>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-list">
+      <div class="skill">HTML</div>
+      <div class="skill">CSS</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Python</div>
+      <div class="skill">Java</div>
+    </div>
+  </section>
+
+  <!-- ===== HOBBIES ===== -->
+  <section id="hobbies">
+    <h2>My Hobbies</h2>
+    <div class="hobbies-list">
+      <div class="hobby">Playing Cricket</div>
+      <div class="hobby">Coding Challenges</div>
+      <div class="hobby">Music</div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A simple personal portfolio using HTML, CSS, and JS.</p>
+      </div>
+      <div class="project-card">
+        <h3>Campus Connect</h3>
+        <p>Campus Connect is a unified web platform that enhances student life by integrating services like marketplace, lost & found, study partner finder, events, feedback, real-time notifications, and admin tools for secure, collaborative campus engagement.</p>
+      </div>
+      <div class="project-card">
+        <h3>Vehicle Count Prediction System</h3>
+        <p>Managing city traffic is difficult without accurate vehicle counts. Traditional counting is costly, slow, and often wrong. With machine learning, we can predict vehicle numbers more quickly, cheaply, and accurately. By using past data like time, day, and weather, we can estimate how many vehicles will pass a spot. This helps traffic managers plan better and reduce congestion.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-links">
+      <a href="mailto:neerajkorukonda123@gmail.com">📧 Email</a>
+      <a href="https://github.com/neerajkorukonda123" target="_blank">🐙 GitHub</a>
+      <a href="https://www.linkedin.com/in/neeraj-korukonda" target="_blank">💼 LinkedIn</a>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <p>&copy; 2025 Neeraj Korukonda | All Rights Reserved</p>
+  </footer>
+
+  <!-- ===== BASIC JS ===== -->
+  <script>
+    // Example: Alert when user clicks a project
+    const projects = document.querySelectorAll('.project-card');
+    projects.forEach((card) => {
+      card.addEventListener('click', () => {
+        alert("You clicked on: " + card.querySelector("h3").innerText);
+      });
+    });
+  </script>
+
+</body>
+</html>

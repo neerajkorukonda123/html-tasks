@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Municipality Complaint Portal</title>
+
+<style>
+body{
+font-family: Arial;
+background:#f2f2f2;
+}
+
+.container{
+width:500px;
+margin:auto;
+background:white;
+padding:20px;
+border-radius:10px;
+box-shadow:0px 0px 10px gray;
+}
+
+h2{
+text-align:center;
+}
+
+input,select,textarea{
+width:100%;
+padding:10px;
+margin:8px 0;
+}
+
+button{
+background:#007BFF;
+color:white;
+border:none;
+padding:10px;
+width:100%;
+cursor:pointer;
+}
+
+button:hover{
+background:#0056b3;
+}
+
+.complaints{
+margin-top:20px;
+}
+
+.complaint-card{
+background:#e9f2ff;
+padding:10px;
+margin:10px 0;
+border-radius:6px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Municipality Complaint Portal</h2>
+
+<form id="complaintForm">
+
+<label>Name</label>
+<input type="text" id="name" required>
+
+<label>Complaint Category</label>
+<select id="category">
+<option>Street Light</option>
+<option>Road Damage</option>
+<option>Garbage</option>
+<option>Water Supply</option>
+</select>
+
+<label>Description</label>
+<textarea id="description"></textarea>
+
+<label>Upload Image</label>
+<input type="file" id="image">
+
+<button type="submit">Submit Complaint</button>
+
+</form>
+
+<div class="complaints">
+<h3>Submitted Complaints</h3>
+<div id="complaintList"></div>
+</div>
+
+</div>
+
+<script>
+
+const form = document.getElementById("complaintForm");
+const complaintList = document.getElementById("complaintList");
+
+let complaints = [];
+
+form.addEventListener("submit", function(e){
+
+e.preventDefault();
+
+const name = document.getElementById("name").value;
+const category = document.getElementById("category").value;
+const description = document.getElementById("description").value;
+
+const complaint = {
+name:name,
+category:category,
+description:description,
+status:"Pending"
+};
+
+complaints.push(complaint);
+
+displayComplaints();
+
+form.reset();
+
+});
+
+function displayComplaints(){
+
+complaintList.innerHTML="";
+
+complaints.forEach(function(c){
+
+const div = document.createElement("div");
+
+div.classList.add("complaint-card");
+
+div.innerHTML = `
+<b>Name:</b> ${c.name} <br>
+<b>Category:</b> ${c.category} <br>
+<b>Description:</b> ${c.description} <br>
+<b>Status:</b> ${c.status}
+`;
+
+complaintList.appendChild(div);
+
+});
+
+}
+
+</script>
+
+</body>
+</html>
